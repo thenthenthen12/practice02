@@ -1,0 +1,108 @@
+@charset "utf-8";
+
+
+@font-face {
+    font-family: "Philosopher";
+    font-weight: 400;
+    src: url("./font/Philosopher-Regular.ttf") format("woff2");
+  }
+@font-face {
+    font-family: "Philosopher";
+    font-weight: 700;
+    src: url("./font/Philosopher-Bold.ttf") format("woff2");
+  }
+@font-face {
+    font-family: "Philosopher";
+    font-weight: 100;
+    src: url("./font/SUIT-Thin.woff2") format("woff2");
+  }
+  @font-face {
+    font-family: "SUIT";
+    font-weight: 200;
+    src: url("./font/SUIT-ExtraLight.woff2") format("woff2");
+  }
+  @font-face {
+    font-family: "SUIT";
+    font-weight: 300;
+    src: url("./font/SUIT-Light.woff2") format("woff2");
+  }
+  @font-face {
+    font-family: "SUIT";
+    font-weight: 400;
+    src: url("./font/SUIT-Regular.woff2") format("woff2");
+  }
+  @font-face {
+    font-family: "SUIT";
+    font-weight: 500;
+    src: url("./font/SUIT-Medium.woff2") format("woff2");
+  }
+  @font-face {
+    font-family: "SUIT";
+    font-weight: 600;
+    src: url("./font/SUIT-SemiBold.woff2") format("woff2");
+  }
+  @font-face {
+    font-family: "SUIT";
+    font-weight: 700;
+    src: url("./font/SUIT-Bold.woff2") format("woff2");
+  }
+  @font-face {
+    font-family: "SUIT";
+    font-weight: 800;
+    src: url("./font/SUIT-ExtraBold.woff2") format("woff2");
+  }
+  @font-face {
+    font-family: "SUIT";
+    font-weight: 900;
+    src: url("./font/SUIT-Heavy.woff2") format("woff2");
+  } 
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+    box-sizing: border-box;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+    color: #171717;
+}
+ol, ul, li {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}

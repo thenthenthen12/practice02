@@ -1,0 +1,1294 @@
+@charset "utf-8";
+body, html{
+    font-size: 62.5%;
+    letter-spacing: -1px;
+    font-family: "SUIT";
+    background-color: #fff;
+
+}
+body::-webkit-scrollbar{
+    display: none;
+}
+
+/* 고정메뉴 시작 */
+
+.quick{
+    z-index: 5;
+    position: fixed;
+    bottom: 4.3rem;
+    right: 7rem;
+}
+.quick > div > ul{
+    position: relative;
+}
+
+.quick > div > ul .depth_01{
+    position: relative;
+}
+.quick > div > ul .depth_01 > a{
+    display: block;
+    position: relative;
+}
+.quick > div > ul .depth_01 > a img:nth-child(1){
+    width: 14.5rem;
+    height: 14.5rem;
+    animation: round 5s linear infinite;
+}
+@keyframes round {
+    0%{
+        transform: rotate(0);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.quick > div > ul .depth_01 > a img:nth-child(2){
+    width: 9.5rem;
+    height: 9.5rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.quick > div > ul .depth_02{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2.3rem;
+    display: none;
+    transition: 0.5s;
+}
+.quick > div > ul .depth_02.on{
+    display: flex;
+    transition: 0.5s;
+}
+.quick > div > ul .depth_02 li{
+    margin-bottom: 0.8rem;
+}
+.quick > div > ul .depth_02 li:last-child{
+    margin-bottom: 0;
+}
+.quick > div > ul .depth_02 li:nth-child(1) a img{
+    width: 3.9rem;
+}
+.quick > div > ul .depth_02 li:nth-child(2) a img{
+    width: 3.7rem;
+}
+.quick > div > ul .depth_02 li:nth-child(3) a img{
+    width: 3.3rem;
+}
+.quick > div > ul .depth_02 li a{
+    width: 9.5rem;
+    height: 9.5rem;
+    border-radius: 50%;
+    background-color: #cac3bf;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.quick > div > ul .depth_02 li a span{
+    color: #fff;
+    font-size: 1.4rem;
+    margin-top: 0.7rem;
+    font-weight: 600;
+}
+
+
+
+
+/* menu_btn 시작 */
+.menu_btn{
+    cursor: pointer;
+    position: fixed;
+    top: 8.7rem;
+    right: 7rem;
+    transform: translateY(-50%);
+    overflow: hidden;
+    z-index: 7;
+}
+.menu_btn span{
+    display: block;
+    width: 3.6rem;
+    height: 0.3rem;
+    background: #000;
+    margin: 0.5rem 0;
+    transition: 0.5s;
+}
+.menu_btn.on span:nth-child(1){
+    transform: rotate(-45deg) translate(-0.6rem, 0.6rem);
+}
+.menu_btn.on span:nth-child(2){
+    transform: translate(-100px);
+}
+.menu_btn.on span:nth-child(3){
+    transform: rotate(45deg) translate(-0.5rem, -0.5rem);
+}
+/* menu_btn 종료 */
+
+
+/* menu 시작 */
+.menu{
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    position: fixed;
+    top: -200%;
+    left: 0;
+    z-index: 6;
+    transition: 1s;
+}
+.menu.on{
+    top: 0;
+    transition: 1s;
+}
+
+.menu .title{
+    width: 100%;
+    height: 14rem;
+    padding: 6rem 0 0 5rem;
+    border-bottom: 1px solid #999999;
+}
+.menu .title h1 a{
+    width: 14rem;
+    display: block;
+}
+.menu .title h1 a img{
+    width: 14rem;
+}
+.menu .content{
+    display: flex;
+    height: calc(100% - 14rem);
+}
+.menu .content .left{
+    height: 100%;
+    width: 65%;
+    border-right: 1px solid #999999;
+    padding: 12rem 0 12rem 18rem ;
+}
+.menu .content .left .inner{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.menu .content .left .inner >div{
+    margin-bottom: 7rem;
+}
+.menu .content .left .inner >div:last-child{
+    margin-bottom: 0;
+}
+.menu .content .left .inner >div > h1{
+    font-family: "Philosopher";
+    font-size: 3.6rem;
+    margin-bottom: 2rem;
+    color: #cecece;
+}
+.menu .content .left .inner >div .text{
+    display: flex;
+    align-items: flex-end;
+}
+.menu .content .left .inner >div .text h1{
+    font-family: "Philosopher";
+    font-size: 7.5rem;
+    margin-right: 7rem;
+}
+.menu .content .left .inner >div .text .depth_02 ul{
+    display: flex;
+    margin-bottom: 1rem;
+}
+.menu .content .left .inner >div .text .depth_02 ul li{
+    font-size: 2.4rem;
+    font-weight: 600;
+    margin-right: 7rem;
+}
+.menu .content .left .inner >div .text .depth_02 ul li a{
+    position: relative;
+    transition: 0.5s;
+}
+.menu .content .left .inner >div .text .depth_02 ul li a:hover{
+    color: #f37021;
+}
+.menu .content .left .inner >div .text .depth_02 ul li a:hover::after{
+    opacity: 1;
+}
+.menu .content .left .inner >div .text .depth_02 ul li a::before{
+    content: "";
+    position: absolute;
+    top: 20%;
+    right: -3.5rem;
+    width: 2px;
+    height: 60%;
+    background: #000;
+}
+.menu .content .left .inner >div .text .depth_02 ul li:last-child a::before{
+    content: none;
+}
+
+.menu .content .left .inner >div .text .depth_02 ul li a::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: #f37021;
+    opacity: 0;
+    transition: 0.5s;
+}
+.menu .content .right{
+    height: 100%;
+    width: 35%;
+    padding-top: 8rem;
+
+}
+.menu .content .right .inner{
+    width: 100%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+.menu .content .right .inner img{
+    height: 100%;
+    width: 70%;
+    object-fit: cover;
+}
+
+.menu .content .right .inner .text{
+    position: absolute;
+    bottom: -10rem;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+.menu .content .right .inner .text h1{
+    font-family: "Philosopher";
+    font-size: 7.5rem;
+    margin-bottom: 1rem;
+}
+.menu .content .right .inner .text h1:nth-child(2){
+    font-size: 5rem;
+}
+
+/* menu 종료 */
+
+
+
+
+
+
+
+
+
+/* left_menu 시작 */
+
+.left_menu{
+    overflow: scroll;
+    -ms-overflow-style: none;
+    margin-top: 4.5rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 25rem;
+    height: 100%;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    z-index: 5;
+}
+.left_menu::-webkit-scrollbar{
+    display: none;
+}
+.left_menu .left_pop{
+    margin-top: 2.7rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.left_menu .left_pop .logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3.3rem;
+}
+.left_menu .left_pop .logo img{
+    width: 14rem;
+}
+.left_menu .left_pop .left_pop_slide{
+    width: 18.5rem;
+    margin-bottom: 6rem;
+    border: 1px solid #bbbbbb;
+}
+.left_menu_Swiper {
+    width: 100%;
+    height: 100%;
+  }
+
+.left_menu_Swiper .swiper-slide {
+    height: 29rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.left_menu_Swiper .swiper-slide .img{
+    width: 100%;
+    height: 23rem;
+    overflow: hidden;
+}
+.left_menu_Swiper .swiper-slide .text{
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    border-top: 1px solid #bbbbbb;
+    background-color: #fff;
+    height: 6rem;
+}
+.left_menu_Swiper .swiper-slide .text h1{
+    font-size: 2rem;
+    font-weight: 800;
+    margin-bottom: 0.6rem;
+}
+.left_menu_Swiper .swiper-slide .text span{
+    font-size: 1.4rem;
+    color: #b1b1b1;
+}
+.left_menu_Swiper .swiper-slide .img img {
+    display: block;
+    width: 100%;
+    height: 120%;
+    object-fit: cover;
+}
+.left_menu .left_pop .nav{
+    margin-bottom: 6rem;
+}
+.left_menu .left_pop .nav ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.left_menu .left_pop .nav ul li{
+    width: 3.7rem;
+    height: 3.7rem;
+    border-radius: 50%;
+    position: relative;
+    margin-bottom: 2rem;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.left_menu .left_pop .nav ul li:last-child{
+    margin-bottom: 0;
+}
+.left_menu .left_pop .nav ul li a{
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    background-color: #bbbbbb;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: 0.5s;
+}
+.left_menu .left_pop .nav ul li.on{
+    transition: 0.5s;
+    border: 1px solid #f37021;
+}
+.left_menu .left_pop .nav ul li.on a{
+    transition: 0.5s;
+    background-color: #f37021;
+}
+.left_menu .left_pop .scroll{
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.left_menu .left_pop .scroll img:nth-child(1){
+    width: 1.3rem;
+    margin-bottom: 1rem;
+}
+.left_menu .left_pop .scroll img:nth-child(2){
+    width: 2.5rem;
+    animation: mouse 1s linear infinite alternate;
+}
+@keyframes mouse {
+    0%{
+        transform: translateY(-20%);
+    }
+    100%{
+        transform: translateY(20%);
+    }
+}
+
+/* left_menu 종료 */
+
+
+
+/* head_pop 시작 */
+.head_pop{
+    font-family: "Philosopher";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 4.5rem;
+    background: linear-gradient(to right, #f37223, #f2b76a);
+    z-index: 5;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.head_pop .inner span{
+    font-size: 2.3rem;
+    color: #fff;
+    font-weight: 700;
+    letter-spacing: 8px;
+}
+.head_pop .inner span:nth-child(1){
+    margin-right: 1rem;
+}
+/* head_pop 종료 */
+
+/* 고정메뉴 종료 */
+
+
+
+
+/* section1 시작 */
+.section{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+}
+
+/* main_visual 시작 */
+.section1 .main_visual{
+    position: relative;
+    width: calc(100% - 25rem);
+    height: 100%;
+}
+.section1 .main_visual .swiper{
+    width: 100%;
+    height: 100%;
+}
+
+.section1 .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+.section1 .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.section1 .swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction{
+    display: flex;
+    justify-content: space-between;
+    width: 5.5rem;
+    left: 10rem;
+    font-size: 1.8rem;
+    bottom: 15rem;
+}
+.section1 .swiper-pagination-total{
+    color: #b1b1b1;
+}
+.section1 .swiper-button-next, .swiper-button-prev{
+    top: unset;
+    bottom: 15rem;
+    left: 18rem;
+    font-size: 1.8rem;
+    color: #000;
+    display: flex;
+    align-items: flex-end;
+}
+
+
+.section1 .swiper-button-next{
+    left: 21rem;
+}
+.section1 .swiper-button-prev:after, .swiper-rtl .swiper-button-next:after{
+    content: "none";
+}
+.section1 .swiper-button-next:after, .swiper-rtl .swiper-button-prev:after{
+    content: "none";
+}
+
+
+
+
+
+
+
+
+
+.section1 .main_visual .text_box{
+    position: absolute;
+    top: 50%;
+    left: 8.5rem;
+    transform: translateY(-50%);
+    z-index: 4;
+}
+.section1 .main_visual .text_box .text .inner .first{
+    font-family: "Philosopher";
+    font-weight: 400;
+    margin-bottom: 3rem;
+}
+.section1 .main_visual .text_box .text .inner .first h1{
+    font-size: 7.5rem;
+}
+.section1 .main_visual .text_box .text .inner .first h1:nth-child(2){
+    color: #f37021;
+    font-weight: 700;
+}
+.section1 .main_visual .text_box .text .inner .second{
+    font-size: 2.6rem;
+    line-height: 3.6rem;
+    font-weight: 500;
+    margin-bottom: 4rem;
+}
+.section1 .main_visual .text_box .text .inner > a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 23.5rem;
+    height: 6.5rem;
+    border: 2px solid #f37021;
+    border-radius: 3.2rem;
+    position: relative;
+}
+.section1 .main_visual .text_box .text .inner > a:hover::before{
+    transition: 0.5s;
+    width: 100%;
+    opacity: 1;
+}
+.section1 .main_visual .text_box .text .inner > a:hover span{
+    transition: 0.5s;
+    color: #fff;
+}
+.section1 .main_visual .text_box .text .inner > a:hover div img:nth-child(1){
+    transition: 0.5s;
+    opacity: 0;
+}
+.section1 .main_visual .text_box .text .inner > a:hover div img:nth-child(2){
+    transition: 0.5s;
+    opacity: 1;
+}
+.section1 .main_visual .text_box .text .inner > a::before{
+    opacity: 0;
+    position: absolute;
+    content: '';
+    width: 10%;
+    height: 100%;
+    border-radius: 3.2rem;
+    background-color: #f37021;
+    border: 2px solid #fff;
+    z-index: -1;
+    top: -2px;
+    left: -2px;
+    transition: 0.5s;
+}
+.section1 .main_visual .text_box .text .inner > a span{
+    transition: 0.5s;
+    font-size: 2.6rem;
+    font-weight: 700;
+    margin-right: 2.8rem;
+    color: #f37021;
+}
+.section1 .main_visual .text_box .text .inner > a >div{
+    position: relative;
+}
+.section1 .main_visual .text_box .text .inner > a div img:nth-child(2){
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+    opacity: 0;
+}
+
+/* main_visual 종료 */
+
+
+
+/* section1 종료 */
+
+
+
+
+/* section2 시작 */
+
+.section2{
+    padding-left: 25rem;
+    align-items: center;
+    justify-content: flex-start;
+    overflow: hidden;
+    background-color: transparent;
+}
+.section2 .bg{
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 0;
+}
+.section2 >.inner{
+    margin-left: 8.5rem;
+    width: 85%;
+    position: relative;
+    z-index: 1;
+}
+.section2 > .inner > h1{
+    font-family: "Philosopher";
+    font-size: 7.5rem;
+    font-weight: 700;
+    margin-bottom: 5rem;
+}
+.section2 >.inner> h1 span{
+    color: #f37021;
+}
+.section2 >.inner .tab_menu{
+    width: 100%;
+    height: 58rem;
+    display: flex;
+
+}
+.section2 .inner .tab_menu >div{
+    width: calc(100% / 2);
+}
+.section2 .inner .tab_menu .left{
+    height: 100%;
+    overflow: hidden;
+}
+.section2 .inner .tab_menu .left > img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.section2 .inner .tab_menu .right{
+    height: 100%;
+}
+.section2 .inner .tab_menu .right >div{
+    cursor: pointer;
+    padding: 1rem 0 1rem 1rem;
+    height: calc(100% / 3);
+    border-top: 1px solid #aeaeae;
+}
+.section2 .inner .tab_menu .right >div.on{
+    background-color: rgba(201, 200, 200, 0.45);
+}
+.section2 .inner .tab_menu .right .third{
+    border-bottom: 1px solid #aeaeae;
+}
+.section2 .inner .tab_menu .right >div .inner{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    overflow: hidden;
+    position: relative;
+}
+.section2 .inner .tab_menu .right >div .inner img:nth-child(1){
+    width: 28rem;
+    object-fit: cover;
+    margin-right: 2.8rem;
+}
+.section2 .inner .tab_menu .right >div .inner .text{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+.section2 .inner .tab_menu .right >div .inner .text h1{
+    font-family: "Philosopher";
+    font-size: 3rem;
+    margin-bottom: 1.8rem;
+    font-weight: 700;
+}
+.section2 .inner .tab_menu .right >div .inner .text span{
+    font-size: 2.6rem;
+    font-weight: 600;
+}
+.section2 .inner .tab_menu .right >div .inner img:nth-child(3){
+    width: 5.6rem;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 5rem;
+}
+
+
+
+/* section2 종료 */
+
+
+
+
+
+
+
+/* section3 시작 */
+
+.section3{
+    padding-left: 25rem;
+    align-items: center;
+    justify-content: flex-start;
+    overflow: hidden;
+
+}
+.section3 .inner{
+    width: 100%;
+    padding-left: 8.7rem;
+}
+.section3 .inner .title{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 6rem;
+}
+.section3 .inner .title .text{
+}
+.section3 .inner .title .text h1{
+    font-family: "Philosopher";
+    font-size: 7.5rem;
+}
+.section3 .inner .title .text h1 span{
+    color: #f37021;
+    font-weight: 700;
+}
+.section3 .inner .title > a{
+    font-size: 2.6rem;
+    margin-right: 7rem;
+    display: flex;
+    align-items: flex-end;
+
+}
+.section3 .inner .title > a span{
+    margin-right: 2.2rem;
+    font-weight: 700;
+}
+.section3 .inner .title > a img{
+    width: 5.6rem;
+    margin-bottom: 0.6rem;
+}
+
+
+
+.section3 .swiper {
+    width: 100%;
+    height: 100%;
+  }
+.section3 .swiper .swiper-wrapper{
+    margin-bottom: 6rem;
+}
+.section3 .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+.section3 .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 35rem;
+    object-fit: cover;
+    margin-bottom: 2rem;
+  }
+.section3 .swiper-slide h1 {
+    font-size: 3rem;
+    font-weight: 600;
+}
+.section3 .swiper-pagination{
+    width: 100%;
+    height: 10px;
+}
+
+.section3 .swiper-horizontal>.swiper-pagination-progressbar, .swiper-pagination-progressbar.swiper-pagination-horizontal, .swiper-pagination-progressbar.swiper-pagination-vertical.swiper-pagination-progressbar-opposite, .swiper-vertical>.swiper-pagination-progressbar.swiper-pagination-progressbar-opposite{
+    top: unset;
+    bottom: 0;
+    background: #f0f0f0;
+}
+.swiper-pagination-progressbar .swiper-pagination-progressbar-fill{
+    background: #f37021;
+}
+
+
+
+/* section3 종료 */
+
+
+
+
+
+/* section4 시작 */
+
+.section4{
+    padding-left: 25rem;
+    align-items: center;
+    justify-content: flex-start;
+    overflow: hidden;
+    background: #f5f5f5;
+}
+.section4 .bg{
+    position: absolute;
+    top: 0;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+.section4 .bg img{
+    width: 100%;
+    object-fit: cover;
+}
+.section4 .inner{
+    width: 100%;
+    height: 100%;
+    padding-left: 8.7rem;
+    position: relative;
+    z-index: 2;
+    display: flex;
+    justify-content: flex-end;
+}
+.section4 .inner .text_box{
+    width: 100%;
+    position: absolute;
+    top: 40%;
+    left: 8.7rem;
+}
+.section4 .inner .text_box .arrow{
+}
+.section4 .inner .text_box .arrow img{
+    width: 5.6rem;
+    height: 1.3rem;
+    cursor: pointer;
+}
+.section4 .inner .text_box .arrow img.on{
+    opacity: 0.3;
+}
+.section4 .inner .text_box .arrow img:nth-child(1){
+    margin-right: 3.5rem;
+}
+.section4 .inner .text_box .text{
+    position: absolute;
+    width: auto;
+    top: 6rem;
+    left: 0;
+    transform: translateX(-100%);
+    opacity: 0;
+    transition: 0.5s;
+}
+.section4 .inner .text_box .text.on{
+    transform: translateX(0);
+    opacity: 1;
+    transition: 0.5s;
+
+}
+.section4 .inner .text_box .text h1:nth-child(1){
+    font-size: 7.5rem;
+    font-family: "Philosopher";
+    font-weight: 700;
+    margin-bottom: 4rem;
+}
+.section4 .inner .text_box .text h1:nth-child(1) span{
+    color: #f37021;
+}
+.section4 .inner .text_box .text h1:nth-child(2){
+    letter-spacing: 10px;
+    font-size: 4.5rem;
+    font-weight: 800;
+    margin-bottom: 4rem;
+}
+.section4 .inner .text_box .text h1:nth-child(2) span{
+    font-size: 2.4rem;
+    font-weight: 500;
+    letter-spacing: -2px;
+}
+.section4 .inner .text_box .text ul li{
+    font-size: 2.6rem;
+    font-weight: 500;
+    margin-bottom: 2rem;
+}
+
+
+
+.section4 .doctor{
+    width: 65%;
+    position: relative;
+}
+.section4 .doctor .slide{
+    width: 65rem;
+    height: 82rem;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+}
+.section4 .doctor .slide img{
+    cursor: pointer;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+}
+.section4 .doctor img.on{
+    z-index: 5;
+    top: 0;
+    left: 0;
+    transform: scale(1);
+    transition: 0.5s;
+
+}
+.section4 .doctor img.on1{
+    z-index: 4;
+    transform: scale(0.8);
+    left: 20rem;
+    filter: grayscale(1);
+    transition: 0.5s;
+
+}
+.section4 .doctor img.on2{
+    z-index: 3;
+    transform: scale(0.6);
+    left: 38rem;
+    filter: grayscale(1);
+    transition: 0.5s;
+
+
+}
+
+
+
+/* section4 종료 */
+
+
+
+
+
+/* section5 시작 */
+.section5{
+    padding-left: 25rem;
+    align-items: center;
+    justify-content: flex-start;
+    overflow: hidden;
+
+}
+.section5 .inner{
+    width: 100%;
+    height: 100%;
+    padding-left: 8.7rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.section5 .inner .title_box{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5rem;
+}
+.section5 .inner .title_box .title{
+    display: flex;
+}
+.section5 .inner .title_box .title h1{
+    font-family: "Philosopher";
+    font-size: 7.5rem;
+    margin-right: 2.3rem;
+}
+.section5 .inner .title_box .title p{
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 1rem;
+    font-size: 3rem;
+}
+.section5 .inner .title_box .title p span{
+    font-weight: 700;
+}
+.section5 .inner .title_box .title h1 span{
+    color: #f37021;
+    font-weight: 700;
+}
+.section5 .inner .title_box .more{
+    font-size: 2.6rem;
+    margin-bottom: 1rem;
+    margin-right: 7rem;
+    display: flex;
+    align-items: flex-end;
+}    
+.section5 .inner .title_box .more span{
+    margin-right: 2.2rem;
+    font-weight: 700;
+}
+.section5 .inner .title_box .more img{
+    width: 5.6rem;
+    margin-bottom: 0.6rem;
+}
+
+
+
+
+
+
+
+
+.section5 .swiper {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 8rem;
+  }
+
+.section5 .swiper-slide {
+    height: 36rem;
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+.section5 .swiper-slide iframe {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+.section5 .section3 .swiper-horizontal>.swiper-pagination-progressbar, .swiper-pagination-progressbar.swiper-pagination-horizontal, .swiper-pagination-progressbar.swiper-pagination-vertical.swiper-pagination-progressbar-opposite, .swiper-vertical>.swiper-pagination-progressbar.swiper-pagination-progressbar-opposite{
+    height: 1rem;
+}
+
+
+
+/* section5 종료 */
+
+
+
+
+
+
+/* footer 시작 */
+.footer{
+    padding-left: 25rem;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: #f5f5f5;
+}
+.footer .inner{
+    width: 100%;
+    height: 100%;
+    padding-left: 8.7rem;
+    display: flex;
+    align-items: center;
+}
+.footer .inner >div{
+    width: calc(100% / 2);
+}
+.footer .inner .left{
+    display: flex;
+    flex-direction: column;
+}
+.footer .inner .left .tab_list{
+    display: flex;
+    align-items: center;
+    margin-bottom: 4rem;
+}
+.footer .inner .left .tab_list >img{
+    transition: 0.5s;
+    cursor: pointer;
+    transform: rotate(0);
+}
+.footer .inner .left .tab_list >img.on{
+    transform: rotate(180deg);
+    transition: 0.5s;
+}
+.footer .inner .left .tab_list ul{
+    margin-right: 3rem;
+    position: relative;
+}
+.footer .inner .left .tab_list ul li{
+    cursor: pointer;
+    width: 18rem;
+    font-size: 5rem;
+    font-weight: 500;
+}
+.footer .inner .left .tab_list ul li.on1{
+    position: absolute;
+    top: 5rem;
+    left: 0;
+    background: #f5f5f5;
+    border: 1px solid #ccc;
+    width: 18rem;
+    height: 6rem;
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+.footer .inner .left .tab_list ul li.on1.active{
+    display: flex;
+}
+.footer .inner .left .tab_list ul li:hover{
+    color: #f37021;
+}
+.footer .inner .left .tab_list ul li.on{
+    border: none;
+    position: static;
+    height: auto;
+    width: auto;
+    display: block;
+}
+
+
+
+
+
+.footer .inner .left .text_box .text.on{
+    display: block;
+}
+.footer .inner .left .text_box .text{
+    display: none;
+}
+.footer .inner .left .text_box .text .first p{
+    font-size: 2.6rem;
+    font-weight: 500;
+    margin-bottom: 1.5rem;
+}
+.footer .inner .left .text_box .text .first .box{
+    display: flex;
+    color: #777777;
+    font-size: 1.4rem;
+    margin-bottom: 4rem;
+}
+.footer .inner .left .text_box .text .first .box span{
+    position: relative;
+    margin-right: 2rem;
+    letter-spacing: 0;
+}
+.footer .inner .left .text_box .text .first .box span::after{
+    content: "";
+    position: absolute;
+    top: 5%;
+    right: -1rem;
+    width: 1px;
+    height: 90%;
+    background: #777777;
+}
+.footer .inner .left .text_box .text .first .box span:last-child::after{
+    content: none;
+}
+.footer .inner .left .text_box .text .second{
+    padding: 4rem 0;
+    border-top: 1px solid #bebebe;
+    border-bottom: 1px solid #bebebe;
+    width: 90%;
+    margin-bottom: 5rem;
+}
+.footer .inner .left .text_box .text .second .info{
+    display: flex;
+    margin-bottom: 3rem;
+}
+.footer .inner .left .text_box .text .second .info .date{
+    margin-right: 8rem;
+}
+.footer .inner .left .text_box .text .second .info .time{
+
+}
+.footer .inner .left .text_box .text .second .info .time p{
+    font-weight: 500;
+    display: flex;
+    justify-content: space-between;
+    font-size: 2.6rem;
+    margin-bottom: 1.5rem;
+    letter-spacing: 0;
+}
+.footer .inner .left .text_box .text .second .info .date p{
+    width: 12rem;
+    font-weight: 500;
+    display: flex;
+    justify-content: space-between;
+    font-size: 2.6rem;
+    margin-bottom: 1.5rem;
+}
+.footer .inner .left .text_box .text .second .info .time p:last-child{
+    margin-bottom: 0;
+}
+.footer .inner .left .text_box .text .second .info .date p:last-child{
+    margin-bottom: 0;
+}
+.footer .inner .left .text_box .text .second > p{
+    font-size: 2rem;
+    letter-spacing: 0;
+    display: flex;
+    font-weight: 500;
+    color: #7f7f7f;
+}
+.footer .inner .left .text_box .text .second > p span{
+    margin-right: 6rem;
+}
+.footer .inner .left .text_box .text .second > p span:last-child{
+    margin-right: 0;
+}
+.footer .inner .left .text_box .text .third{
+    font-size: 8rem;
+    color: #f37021;
+    font-weight: 900;
+}
+
+
+
+
+
+
+
+.footer .inner .right{
+    background-color: #000;
+    height: 66rem;
+}
+.footer .right .box{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.footer .right .box >div{
+    position: absolute;
+    top: 0;
+    left: 100%;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+}
+.footer .right .box >div.on{
+    left: 0;
+    opacity: 1;
+}
+
+
+
+
+
+/* footer 종료 */

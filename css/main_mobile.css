@@ -1,0 +1,457 @@
+@charset "utf-8";
+@media screen and (max-width: 1810px) {
+    .section4 .bg{
+        left: 1%;
+    }
+    
+}
+
+
+@media screen and (max-width: 1740px) {
+    .menu .content .left{
+        width: 70%;
+        padding: 12rem 0 12rem 15rem;
+    }
+    .menu .content .right{
+        width: 30%;
+    }
+    .menu .content .right .inner img{
+        width: 80%;
+    }
+    .section4 .bg{
+        left: 2%;
+    }
+    .footer .inner .left .text_box .text .second > p span{
+        margin-right: 3rem;
+    }
+    
+    
+}
+
+
+@media screen and (max-width: 1640px) {
+    body,html{
+        font-size: 58%;
+    }
+}
+
+
+@media screen and (max-width: 1520px) {
+    .menu .content .left{
+        padding: 12rem 0 12rem 10rem;
+    }
+    .section1 .main_visual .text_box{
+        left: 5.5rem;
+    }
+    .section2 >.inner{
+        margin-left: 5.5rem;
+        width: 90%;
+    }
+    .section3 .inner{
+        padding-left: 5.5rem;
+    }
+    .section4 .bg{
+        left: 4%;
+    }
+    .section4 .inner{
+        padding-left: 5.5rem;
+    }
+    .section4 .inner .text_box{
+        left: 5.5rem;
+    }
+    .section4 .doctor{
+        width: 60%;
+    }
+    .section4 .doctor .slide{
+        width: 55rem;
+        height: 70rem;
+    }
+    .section4 .doctor img.on1 {
+        left: 15rem;
+    }
+    .section4 .doctor img.on2{
+        left: 29rem;
+    }
+    .section5 .inner{
+        padding-left: 5.5rem;
+    }
+    .footer .inner{
+        padding-left: 5.5rem;
+    }
+    .footer .inner .left .text_box .text .second {
+        width: 95%;
+    }
+}
+
+
+@media screen and (max-width: 1440px) {
+    body, html {
+        font-size: 50%;
+    }
+    .section{
+        height: 800px;
+    }
+
+    .section1 .main_visual .text_box .text .inner > a >div img{
+        width: 5.6rem;
+    }
+    .section4 .doctor{
+        width: 58%;
+    }
+}
+
+
+@media screen and (max-width: 1245px) {
+    .menu .content .left{
+        padding: 12rem 0 12rem 5rem;
+    }
+    .section{
+        height: 700px;
+    }
+
+}
+
+
+@media screen and (max-width: 1200px) {
+    body, html{
+        font-size: 45%;
+    }
+}
+
+
+@media screen and (max-width: 1080px) {
+    body, html{
+        font-size: 40%;
+    }
+
+}
+
+
+@media screen and (max-width: 1000px) {
+    .menu .content .left{
+        border: none;
+    }
+    .section2 .inner .tab_menu .right >div .inner img:nth-child(1){
+        width: 23rem;
+    }
+    .section4 .doctor{
+        width: 63%;
+    }
+    .section{
+        height: 600px;
+    }
+    .footer .inner .left .text_box .text .second > p{
+        flex-direction: column;
+    }
+    .footer .inner .left .text_box .text .second > p span{
+        margin-right: 0;
+        margin-bottom: 3rem;
+    }
+    .footer .inner .left .text_box .text .second > p span:last-child{
+        margin-bottom: 0;
+    }
+    .menu .content{
+        position: relative;
+    }
+    .menu .content .right{
+        width: 50%;
+        position: absolute;
+        top: 0;
+        right: 0;
+        opacity: 0.7;
+        z-index: -1;
+    }
+    .menu .content .right .inner{
+        position: absolute;
+        top: 10%;
+        right: 0;
+    }
+    .menu .content .right .inner .text{
+        display: none;
+    }
+    .menu .content .left{
+        width: 100%;
+    }
+}
+
+
+@media screen and (max-width: 860px) {
+    body,html{
+        font-size: 38%;
+    }
+    .section2 .inner .tab_menu .right >div .inner img:nth-child(1){
+        display: none;
+    }
+    .section2 .inner .tab_menu .right >div .inner .text{
+        margin-left: 3rem;
+    }
+    .section2 .inner .tab_menu .left{
+        width: 70%;
+    }
+    .section2 .inner .tab_menu .right{
+        width: 30%;
+    }
+    .section4 .doctor .slide {
+        width: 45rem;
+        height: 64rem;
+    }
+    .section4 .doctor img.on1 {
+        left: 12rem;
+    }
+    .section4 .doctor img.on2 {
+        left: 24rem;
+    }
+
+
+}
+
+
+@media screen and (max-width: 800px) {
+
+    .section.footer{
+        height: 800px;
+    }
+    .section2 .inner .tab_menu .left{
+        width: 60%;
+    }
+    .section2 .inner .tab_menu .right{
+        width: 40%;
+    }
+    .footer .inner{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .footer .inner >div{
+        width: 100%;
+    }
+    .footer .inner .left{
+        position: relative;
+    }
+    .footer .inner .left .text_box .text{
+        margin-bottom: 5rem;
+    }
+    .footer .inner .left .text_box .text .second{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .footer .inner .left .text_box .text .second .info{
+        margin-bottom: 0;
+    }
+    .footer .inner .right{
+        background: transparent;
+        height: 50rem;
+    }
+    .footer .right .box{
+        width: 95%;
+    }
+    .footer .inner .left .text_box .text .third{
+        position: absolute;
+        top: 0;
+        right: 5%;
+    }
+
+}
+
+
+@media screen and (max-width: 760px) {
+    .section{
+        height: 500px;
+    }
+    .section2 >.inner .tab_menu{
+        height: 40rem;
+    }
+    .section3 .swiper-slide img{
+        height: 30rem;
+    }
+    .section4 .inner .text_box .text{
+        top: -2rem;
+    }
+    .section4 .inner .text_box .arrow {
+        transform: translateY(-8rem);
+    }
+    .section5 .inner .title_box .title{
+        display: block;
+    }
+    .section5 .inner .title_box .title h1{
+        margin-right: 0;
+        margin-bottom: 1rem;
+    }
+    .section.footer{
+        height: 700px;
+    }
+}
+
+
+@media screen and (max-width: 700px) {
+    .section1 .main_visual .text_box .text .inner .first h1{
+        font-size: 6rem;
+    }
+    .section2 > .inner > h1{
+        font-size: 6rem;
+    }
+    .section3 .inner .title .text h1{
+        font-size: 6rem;
+    }
+    .section4 .doctor{
+        width: 75%;
+    }
+    .section4 .inner .text_box .text h1:nth-child(1){
+        font-size: 6rem;
+    }
+    .section5 .inner .title_box .title h1{
+        font-size: 6rem;
+    }
+    .footer .inner .left .text_box .text .third{
+        font-size: 6rem;
+    }
+}
+
+
+@media screen and (max-width: 650px) {
+    body,html{
+        font-size: 34%;
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+    .footer .inner .left .text_box .text .second{
+        display: block;
+    }
+    .footer .inner .left .text_box .text .second .info{
+        margin-bottom: 3rem;
+    }
+    .footer .inner .left .text_box .text .second > p{
+        flex-direction: row;
+    }
+    .footer .inner .left .text_box .text .second > p span{
+        margin-bottom: 0;
+        margin-right: 3rem;
+    }
+}
+
+
+@media screen and (max-width: 560px) {
+    .menu .content .left .inner >div .text{
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+    .menu .content .left .inner >div .text h1{
+        margin-right: 0;
+    }
+    .menu .content .right .inner{
+        height: 85%;
+    }
+    .menu .content .left .inner >div{
+        margin-bottom: 0;
+    }
+    .menu .content .left .inner >div .text .depth_02{
+        width: 40%;
+        margin-right: 5%;
+    }
+    .menu .content .left .inner >div .text .depth_02 ul{
+        display: flex;
+        flex-direction: column;
+    }
+    .menu .content .left .inner >div .text .depth_02 ul li{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        height: 5rem;
+    }
+    .menu .content .left .inner >div .text .depth_02 ul li a::before{
+        content: none;
+    }
+
+
+
+
+
+    .section{
+        height: 400px;
+    }
+    .section1 .main_visual .text_box .text .inner > a >div img{
+        width: 4rem;
+    }
+    .section1 .swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction{
+        bottom: 10rem;
+    }
+    .section1 .swiper-button-next, .swiper-button-prev{
+        bottom: 10rem;
+    }
+    .section2 .inner .tab_menu .right >div .inner img:nth-child(3){
+        width: 4rem;
+    }
+    .section3 .inner .title > a span{
+        display: none;
+    }
+    .section3 .inner .title > a img{
+        width: 4rem;
+    }
+    .section5 .inner .title_box .more span{
+        display: none;
+    }
+    .section5 .inner .title_box .more img{
+        width: 4rem;
+    }
+}
+
+
+@media screen and (max-width: 500px) {
+    .left_menu{
+        width: 8rem;
+    }
+    .left_menu .left_pop .logo img {
+        width: 7rem;
+    }
+    .left_menu_Swiper .swiper-slide{
+        height: 18rem;
+    }
+    .left_menu .left_pop .left_pop_slide{
+        width: 7rem;
+    }
+    .section1 .main_visual{
+        width: calc(100% - 8rem);
+    }
+    .section2{
+        padding-left: 8rem;
+    }
+    .section2 >.inner .tab_menu{
+        display: block;
+    }
+    .section2 .inner .tab_menu .left{
+        width: 100%;
+        height: 70%;
+    }
+    .section2 .inner .tab_menu .right{
+        width: 100%;
+        display: flex;
+    }
+    .section2 .inner .tab_menu .right >div{
+        width: calc(100% / 3);
+    }
+    .section2 .inner .tab_menu .right >div .inner img:nth-child(3){
+        display: none;
+    }
+    .section2 .inner .tab_menu .right >div{
+        border-top: none;
+        border-bottom: 1px solid #aeaeae;
+    }
+    .section3{
+        padding-left: 8rem;
+    }
+    .section4{
+        padding-left: 8rem;
+    }
+    .section4 .doctor{
+        width: 100%;
+    }
+    .section5{
+        padding-left: 8rem;
+    }
+    .footer{
+        padding-left: 8rem;
+    }
+}
