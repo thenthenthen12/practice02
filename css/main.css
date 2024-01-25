@@ -4,12 +4,15 @@ body, html{
     letter-spacing: -1px;
     font-family: "SUIT";
     background-color: #fff;
+    
 
 }
 body::-webkit-scrollbar{
     display: none;
 }
-
+#wrap{
+    overflow: hidden;
+}
 /* 고정메뉴 시작 */
 
 .quick{
@@ -765,8 +768,6 @@ body::-webkit-scrollbar{
     justify-content: space-between;
     margin-bottom: 6rem;
 }
-.section3 .inner .title .text{
-}
 .section3 .inner .title .text h1{
     font-family: "Philosopher";
     font-size: 7.5rem;
@@ -878,8 +879,6 @@ body::-webkit-scrollbar{
     position: absolute;
     top: 40%;
     left: 8.7rem;
-}
-.section4 .inner .text_box .arrow{
 }
 .section4 .inner .text_box .arrow img{
     width: 5.6rem;
@@ -1214,9 +1213,6 @@ body::-webkit-scrollbar{
 }
 .footer .inner .left .text_box .text .second .info .date{
     margin-right: 8rem;
-}
-.footer .inner .left .text_box .text .second .info .time{
-
 }
 .footer .inner .left .text_box .text .second .info .time p{
     font-weight: 500;

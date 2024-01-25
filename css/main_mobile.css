@@ -370,7 +370,7 @@
 
 
     .section{
-        height: 400px;
+        height: 500px;
     }
     .section1 .main_visual .text_box .text .inner > a >div img{
         width: 4rem;
@@ -442,6 +442,9 @@
     .section3{
         padding-left: 8rem;
     }
+    .section3 .swiper-slide img{
+        height: 50rem;
+    }
     .section4{
         padding-left: 8rem;
     }
@@ -451,7 +454,68 @@
     .section5{
         padding-left: 8rem;
     }
+    .section5 .swiper-slide{
+        height: 50rem;
+    }
     .footer{
         padding-left: 8rem;
+    }
+}
+
+
+@media screen and (max-width: 420px) {
+    .section1 .main_visual{
+        width: calc(100% - 5.5rem);
+    }
+    .section2{
+        padding-left: 5.5rem;
+    }
+    .section3 .inner{
+        padding-left: 2rem;
+    }
+    .section4 .inner{
+        padding-left: 2rem;
+    }
+    .section5 .inner{
+        padding-left: 2rem;
+    }
+    .footer .inner{
+        padding-left: 2rem;
+    }
+    .footer .inner .left .text_box .text .third{
+        font-size: 4rem;
+    }
+}
+
+
+@media screen and (max-width: 400px) {
+    .footer .inner .left .text_box .text .second > p{
+        flex-direction: column;
+    }
+    .footer .inner .left .text_box .text .second > p span{
+        margin-right: 0;
+        margin-bottom: 3rem;
+    }
+}
+
+
+@media screen and (max-width: 320px) {
+    .footer .inner .left .tab_list ul li{
+        font-size: 3rem;
+    }
+    .footer .inner .left .tab_list >img{
+        width: 10px;
+    }
+    .footer .inner .left .text_box .text .first p{
+        font-size: 2rem;
+    }
+    .footer .inner .left .text_box .text .second .info .date p{
+        font-size: 2rem;
+    }
+    .footer .inner .left .text_box .text .second .info .time p{
+        font-size: 2rem;
+    }
+    .footer .inner .left .text_box .text .second > p{
+        font-size: 1.6rem;
     }
 }
